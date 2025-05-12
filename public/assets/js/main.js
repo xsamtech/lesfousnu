@@ -13,17 +13,6 @@
         document.querySelector('.preloader').style.display = 'none';
     }
 
-    function getLogoSrc() {
-        const basePath = "https://lesfousnu.xsamtech.com/assets/img/logo-text-";
-        const extension = ".png";
-        
-        // Checks user preferences for dark or light mode
-        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        
-        // Returns the logo path based on user preference
-        return basePath + (userPrefersDark ? 'dark' : 'light') + "-mode" + extension;
-    }
-
     /*=====================================
     Sticky
     ======================================= */
@@ -34,16 +23,18 @@
 
         if (window.pageYOffset > sticky) {
             header_navbar.classList.add("sticky");
-            logo.setAttribute("src", getLogoSrc())
+            header_navbar.style.backgroundColor = '#000';
+            // logo.setAttribute("src", "https://lesfousnu.xsamtech.com/assets/img/logo-text-light-mode.png")
+
         } else {
             header_navbar.classList.remove("sticky");
-            logo.setAttribute("src", getLogoSrc())
+            header_navbar.style.backgroundColor = 'transparent';
+            // logo.setAttribute("src", "https://lesfousnu.xsamtech.com/assets/img/logo-text-dark-mode.png")
         }
-
-
 
         // show or hide the back-top-top button
         var backToTo = document.querySelector(".back-to-top");
+
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             backToTo.style.display = "block";
         } else {
@@ -77,9 +68,11 @@
             var val = currLink.getAttribute('href');
             var refElement = document.querySelector(val);
             var scrollTopMinus = scrollPos + 73;
+
             if (refElement.offsetTop <= scrollTopMinus && (refElement.offsetTop + refElement.offsetHeight > scrollTopMinus)) {
                 document.querySelector('.page-scroll').classList.remove('active');
                 currLink.classList.add('active');
+
             } else {
                 currLink.classList.remove('active');
             }
@@ -87,7 +80,6 @@
     };
 
     window.document.addEventListener('scroll', onScroll);
-
 
     //===== close navbar-collapse when a  clicked
     let navbarToggler = document.querySelector(".navbar-toggler");
@@ -103,7 +95,6 @@
             navbarCollapse.classList.remove('show')
         })
     );
-
 
     //===== glide tiny for testimonial
 
@@ -128,7 +119,6 @@
 
     // ====== scroll top js
     function scrollTo(element, to = 0, duration = 1000) {
-
         const start = element.scrollTop;
         const change = to - start;
         const increment = 20;
@@ -162,6 +152,4 @@
         scrollTo(document.documentElement);
         return false;
     }
-
-
 })();
