@@ -62,8 +62,8 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <nav class="navbar navbar-expand-lg">
-                                <a class="navbar-brand" href="index.html">
-                                    <img id="logo" src="{{ asset('assets/img/logo-text-light-mode.png') }}" alt="Logo">
+                                <a class="navbar-brand" href="{{ route('') }}">
+                                    <img id="logo" src="{{ asset('assets/img/logo-text-dark-mode.png') }}" alt="Logo">
                                 </a>
                                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="toggler-icon"></span>
@@ -133,7 +133,7 @@
         <!--====== FOOTER PART ENDS ======-->
 
         <!--====== BACK TOP TOP PART START ======-->
-        <button class="back-to-top"><i class="lni lni-chevron-up"></i></button>
+        <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
         <!--====== BACK TOP TOP PART ENDS ======-->
 
         <!-- Scripts -->
