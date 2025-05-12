@@ -371,7 +371,7 @@ p {
 
 @media (max-width: 767px) {
   .navbar-brand img {
-    width: 130px;
+    width: 200;
   }
 }
 
