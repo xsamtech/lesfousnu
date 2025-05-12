@@ -24,10 +24,10 @@
 
         if (window.pageYOffset > sticky) {
             header_navbar.classList.add("sticky");
-            logo.setAttribute("src", "../img/logo-text-light-mode.png")
+            logo.setAttribute("src", "https://lesfousnu.xsamtech.com/assets/img/logo-text-light-mode.png")
         } else {
             header_navbar.classList.remove("sticky");
-            logo.setAttribute("src", "../img/logo-text-dark-mode.png")
+            logo.setAttribute("src", "https://lesfousnu.xsamtech.com/assets/img/logo-text-dark-mode.png")
         }
 
 
