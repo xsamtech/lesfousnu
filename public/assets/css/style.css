@@ -20,6 +20,7 @@
     01.COMMON css 
 ===========================*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
+
 html {
   scroll-behavior: smooth;
 }
@@ -106,7 +107,8 @@ h6 {
   font-size: 16px;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
@@ -282,24 +284,31 @@ p {
   12.5% {
     transform: rotate(135deg);
   }
+
   25% {
     transform: rotate(270deg);
   }
+
   37.5% {
     transform: rotate(405deg);
   }
+
   50% {
     transform: rotate(540deg);
   }
+
   62.5% {
     transform: rotate(675deg);
   }
+
   75% {
     transform: rotate(810deg);
   }
+
   87.5% {
     transform: rotate(945deg);
   }
+
   to {
     transform: rotate(1080deg);
   }
@@ -309,9 +318,11 @@ p {
   0% {
     transform: rotate(130deg);
   }
+
   50% {
     transform: rotate(-5deg);
   }
+
   to {
     transform: rotate(130deg);
   }
@@ -321,9 +332,11 @@ p {
   0% {
     transform: rotate(-130deg);
   }
+
   50% {
     transform: rotate(5deg);
   }
+
   to {
     transform: rotate(-130deg);
   }
@@ -366,12 +379,12 @@ p {
 }
 
 .navbar-brand img {
-  width: 193px;
+  width: 200px;
 }
 
 @media (max-width: 767px) {
   .navbar-brand img {
-    width: 200;
+    width: 210px;
   }
 }
 
@@ -505,18 +518,23 @@ p {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .navbar-nav .nav-item a.active, .navbar-nav .nav-item a:hover {
+
+  .navbar-nav .nav-item a.active,
+  .navbar-nav .nav-item a:hover {
     color: #E84E4E;
   }
 }
 
 @media (max-width: 767px) {
-  .navbar-nav .nav-item a.active, .navbar-nav .nav-item a:hover {
+
+  .navbar-nav .nav-item a.active,
+  .navbar-nav .nav-item a:hover {
     color: #E84E4E;
   }
 }
 
-.navbar-nav .nav-item a.active::before, .navbar-nav .nav-item a:hover::before {
+.navbar-nav .nav-item a.active::before,
+.navbar-nav .nav-item a:hover::before {
   width: 100%;
 }
 
@@ -582,7 +600,8 @@ p {
   color: #222;
 }
 
-.navbar-nav .nav-item .sub-menu li a.active, .navbar-nav .nav-item .sub-menu li a:hover {
+.navbar-nav .nav-item .sub-menu li a.active,
+.navbar-nav .nav-item .sub-menu li a:hover {
   padding-left: 25px;
   color: #E84E4E;
 }
@@ -643,7 +662,8 @@ p {
   background-color: #E84E4E;
 }
 
-.sticky .navbar-nav .nav-item a.active, .sticky .navbar-nav .nav-item a:hover {
+.sticky .navbar-nav .nav-item a.active,
+.sticky .navbar-nav .nav-item a:hover {
   color: #E84E4E;
 }
 
@@ -1331,7 +1351,8 @@ p {
   z-index: -1;
 }
 
-p.form-message.success, p.form-message.error {
+p.form-message.success,
+p.form-message.error {
   font-size: 16px;
   color: #2B2A3D;
   background: #F9F9F9;
@@ -1341,7 +1362,8 @@ p.form-message.success, p.form-message.error {
   margin-left: 15px;
 }
 
-p.form-message.success.form-message.error, p.form-message.error.form-message.error {
+p.form-message.success.form-message.error,
+p.form-message.error.form-message.error {
   color: #f00;
 }
 
@@ -1386,12 +1408,12 @@ p.form-message.success.form-message.error, p.form-message.error.form-message.err
   padding-top: 5px;
 }
 
-.footer_menu ul li + li {
+.footer_menu ul li+li {
   margin-left: 30px;
 }
 
 @media (max-width: 767px) {
-  .footer_menu ul li + li {
+  .footer_menu ul li+li {
     margin-left: 15px;
   }
 }
@@ -1420,7 +1442,7 @@ p.form-message.success.form-message.error, p.form-message.error.form-message.err
   display: inline-block;
 }
 
-.footer_social ul li + li {
+.footer_social ul li+li {
   margin-left: 30px;
 }
 
