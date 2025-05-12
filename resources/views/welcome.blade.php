@@ -114,5 +114,36 @@
         </section>
         <!--====== HEADER PART ENDS ======-->
 
+        <!--====== FOOTER PART START ======-->
+        <footer id="footer" class="footer_area">
+            <div class="container">
+                <div class="footer_wrapper text-center d-lg-flex align-items-center justify-content-between">
+                    <p class="credit">Designed and Developed by <a href="https://uideck.com" rel="nofollow">UIdeck</a></p>
+                    <div class="footer_social pt-15">
+                        <ul>
+                            <li><a href="#0"><i class="lni lni-facebook-original"></i></a></li>
+                            <li><a href="#0"><i class="lni lni-twitter-original"></i></a></li>
+                            <li><a href="#0"><i class="lni lni-instagram-original"></i></a></li>
+                            <li><a href="#0"><i class="lni lni-linkedin-original"></i></a></li>
+                        </ul>
+                    </div> <!-- footer social -->
+                </div> <!-- footer wrapper -->
+            </div> <!-- container -->
+        </footer>
+        <!--====== FOOTER PART ENDS ======-->
+
+        <!--====== BACK TOP TOP PART START ======-->
+        <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+        <!--====== BACK TOP TOP PART ENDS ======-->
+
+        <!-- Scripts -->
+        <!--====== Bootstrap js ======-->
+        <script src="{{ asset('assets/js/bootstrap.bundle-5.0.0-beta1.min.js') }}"></script>
+        <!--====== glide js ======-->
+        <script src="{{ asset('assets/js/tiny-slider.js') }}"></script>
+        <!--====== wow js ======-->
+        <script src="{{ asset('assets/js/wow.min.js') }}"></script>
+        <!--====== Main js ======-->
+        <script src="{{ asset('assets/js/main.js') }}"></script>
     </body>
 </html>
