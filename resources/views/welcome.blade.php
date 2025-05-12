@@ -80,7 +80,7 @@
                                             <a class="page-scroll" href="#about">A propos</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="page-scroll" href="#portfolio">Galérie</a>
+                                            <a class="page-scroll" href="#portfolio">Galerie</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="page-scroll" href="#blog">Blog</a>

@@ -13,6 +13,16 @@
         document.querySelector('.preloader').style.display = 'none';
     }
 
+    function getLogoSrc() {
+        const basePath = "https://lesfousnu.xsamtech.com/assets/img/logo-text-";
+        const extension = ".png";
+        
+        // Checks user preferences for dark or light mode
+        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        // Returns the logo path based on user preference
+        return basePath + (userPrefersDark ? 'dark' : 'light') + "-mode" + extension;
+    }
 
     /*=====================================
     Sticky
@@ -24,10 +34,10 @@
 
         if (window.pageYOffset > sticky) {
             header_navbar.classList.add("sticky");
-            logo.setAttribute("src", "https://lesfousnu.xsamtech.com/assets/img/logo-text-light-mode.png")
+            logo.setAttribute("src", getLogoSrc())
         } else {
             header_navbar.classList.remove("sticky");
-            logo.setAttribute("src", "https://lesfousnu.xsamtech.com/assets/img/logo-text-dark-mode.png")
+            logo.setAttribute("src", getLogoSrc())
         }
 
 
@@ -150,6 +160,7 @@
 
     document.querySelector('.back-to-top').onclick = function () {
         scrollTo(document.documentElement);
+        return false;
     }
 
 
