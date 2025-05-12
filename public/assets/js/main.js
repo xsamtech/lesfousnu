@@ -24,10 +24,10 @@
 
         if (window.pageYOffset > sticky) {
             header_navbar.classList.add("sticky");
-            logo.setAttribute("src", "/assets/img/logo-text-dark-mode.png")
+            logo.setAttribute("src", "/assets/img/logo-text-dark-light.png")
         } else {
             header_navbar.classList.remove("sticky");
-            logo.setAttribute("src", "/assets/img/logo-text-dark-light.png")
+            logo.setAttribute("src", "/assets/img/logo-text-dark-mode.png")
         }
 
 
