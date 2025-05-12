@@ -133,7 +133,7 @@
         <!--====== FOOTER PART ENDS ======-->
 
         <!--====== BACK TOP TOP PART START ======-->
-        <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+        <button class="back-to-top"><i class="lni lni-chevron-up"></i></button>
         <!--====== BACK TOP TOP PART ENDS ======-->
 
         <!-- Scripts -->
