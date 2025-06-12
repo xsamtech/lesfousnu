@@ -1,17 +1,23 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
+@extends('layouts.app', ['page_title' => 'Tableau de bord'])
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
-                    {{ __("You're logged in!") }}
-                </div>
-            </div>
-        </div>
-    </div>
-</x-app-layout>
+@section('app-content')
+
+        <!--====== FEATURES PART START ======-->
+        <section id="features" class="features_area pt-120 pb-120 bg-dark">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="section_title text-center pb-25">
+                            <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Tableau de bord</h4>
+                            <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Gestion des données(Rôles, arts, artistes, etc.)</p>
+                        </div> <!-- section title -->
+                    </div>
+                </div> <!-- row -->
+                <div class="row">
+
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </section>
+        <!--====== FEATURES PART ENDS ======-->
+
+@endsection
